@@ -40,8 +40,8 @@ function App() {
 
 return (
   <div className="container d-flex justify-content-center align-items-center vh-100">
-    <div className="card p-4 shadow-lg text-center bg-dark text-white" style={{ width: "400px" , height: "350px" }}>
-    <img src={chatbotImage} alt="Chatbot" className="img-fluid mx-auto d-block mb-3" style={{ width: "100px", height: "100px" }} />
+    <div className="card p-4 shadow-lg text-center bg-dark text-white" style={{ width: "700px" , height: "750px" }}>
+    <img src={chatbotImage} alt="Chatbot" className="img-fluid mx-auto d-block mb-3" style={{ width: "300px", height: "300px" }} />
       <h2 className="mb-3">Air Quality Cat</h2>
       <input
         type="text"
