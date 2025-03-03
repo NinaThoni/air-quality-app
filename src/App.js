@@ -14,10 +14,10 @@ function App() {
     setResponse("");
 
     try {
-        const res = await axios.get(`http://127.0.0.1:8000/ask`, {
-            params: { query }, // Use params instead of adding query manually
-            timeout: 720000, // Wait up to 60 seconds
-        });
+      const res = await axios.get("https://air-quality-api.azurewebsites.net/ask", { 
+          params: { query }, 
+          timeout: 720000
+      });
 
         console.log("API Response:", res); // Log full response
         setResponse(res.data); // Show full response in UI for debugging
