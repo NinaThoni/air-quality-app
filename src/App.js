@@ -16,7 +16,7 @@ function App() {
     try {
         const res = await axios.get(`http://127.0.0.1:8000/ask`, {
             params: { query }, // Use params instead of adding query manually
-            timeout: 60000, // Wait up to 60 seconds
+            timeout: 720000, // Wait up to 60 seconds
         });
 
         console.log("API Response:", res); // Log full response
