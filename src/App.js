@@ -12,14 +12,14 @@ function App() {
     if (!query.trim()) return;
     setLoading(true);
     setResponse("");
-
+    
     try {
       const res = await axios.get("https://air-quality-api.azurewebsites.net/ask", { 
           params: { query }, 
           timeout: 720000
       });
 
-        console.log("API Response:", res); // Log full response
+        console.log("API Response:", res.data); // Log full response
         setResponse(res.data); // Show full response in UI for debugging
     } catch (error) {
         console.error("Axios Error:", error); // Log full error
